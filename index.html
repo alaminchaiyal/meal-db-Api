@@ -12,14 +12,19 @@
 </head>
 
 <body class="bg-dark">
-	<div class="container">
+	<div class="container" id="main-section">
 		<h1 class="text-center text-white mt-5">Welcome to TheMealRecipe</h1>
 		<p class="text-center text-white">An open, crowd-sourced database of Recipes from around the world</p>
 		<div class="input-group mb-3 mx-auto w-50 mt-5">
 			<input type=" text" id="search-field" class="form-control" aria-label="Text input with dropdown button"
 				placeholder="search your favourite food item">
-			<button id="search-btn" class="btn btn-outline-secondary text-white" type="button" data-bs-toggle="dropdown"
+			<button id="search-btn" class="btn btn-outline-secondary text-white" type="button" data-bs-toggle=""
 				aria-expanded="false">Search</button>
+		</div>
+		<p id="error" class="text-warning text-center"></p>
+		<div id="spinner" class="text-center text-white">
+		</div>
+		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5" id="card">
 		</div>
 	</div>
 	<!-- bootstrap -->
