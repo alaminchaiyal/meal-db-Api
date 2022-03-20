@@ -49,6 +49,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
   		</div>
 	</div>
 	`;
+	card.textContent = '';
 	const displayData = setTimeout(fetchData, 1000);
 	displayData;
 })
